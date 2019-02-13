@@ -1,0 +1,405 @@
+This is the dictionary with some pre-processing done,
+and some stop words removed. 
+
+
+Dictionary length: 251521
+what 470701
+can 187146
+why 163695
+that 107726
+have 99707
+does 92568
+your 67663
+which 65813
+should 65556
+would 62908
+when 62835
+best 62311
+people 55651
+some 54457
+there 54396
+will 53137
+who 52212
+like 49095
+about 45141
+did 45030
+they 44417
+was 42232
+good 38297
+their 34954
+has 32492
+india 31963
+after 30652
+most 29194
+where 28568
+make 28203
+this 28104
+more 26717
+think 26031
+many 24489
+between 24326
+than 23937
+much 23443
+time 23379
+other 23046
+life 22169
+he 22146
+someone 21979
+’ 21317
+out 20781
+us 20202
+know 20081
+being 19114
+want 18792
+work 18690
+take 18540
+were 18322
+them 18311
+ever 17988
+find 17391
+his 17023
+could 17015
+become 16983
+just 16673
+without 16672
+world 16643
+feel 16199
+person 16180
+into 16067
+better 15995
+quora 15590
+year 14893
+go 14825
+no 14777
+new 14466
+possible 14388
+job 14124
+only 14102
+years 13966
+been 13849
+mean 13585
+indian 13534
+used 13175
+need 13161
+her 13065
+start 12907
+trump 12898
+first 12831
+had 12795
+women 12682
+difference 12435
+money 12334
+still 12218
+different 12061
+really 11747
+while 11731
+school 11553
+our 11417
+country 11413
+learn 11324
+over 11293
+now 11257
+same 11197
+business 11173
+long 11147
+love 11136
+before 11022
+things 10881
+college 10831
+even 10803
+old 10714
+engineering 10475
+give 10399
+during 10320
+she 10319
+help 10269
+online 10220
+its 10058
+say 9963
+day 9765
+because 9643
+see 9637
+using 9628
+bad 9600
+s 9560
+book 9481
+university 9343
+back 9283
+change 9278
+men 9202
+company 9156
+then 9134
+sex 8990
+anyone 8968
+stop 8938
+made 8892
+having 8869
+getting 8852
+him 8750
+high 8698
+2 8657
+girl 8652
+live 8651
+student 8628
+buy 8592
+own 8473
+thing 8460
+two 8441
+happen 8435
+study 8413
+going 8386
+right 8354
+2017 8268
+science 8125
+name 8115
+countries 8109
+something 7961
+through 7846
+white 7812
+look 7686
+real 7651
+free 7588
+english 7552
+true 7551
+such 7528
+experience 7500
+black 7497
+come 7490
+questions 7469
+china 7467
+doing 7408
+students 7367
+number 7296
+system 7295
+against 7278
+important 7275
+water 7253
+very 7249
+american 7214
+government 7143
+ways 7136
+class 7123
+language 7115
+t 7089
+2018 7070
+tell 7009
+books 6964
+computer 6896
+state 6879
+war 6877
+girls 6860
+keep 6846
+never 6752
+man 6731
+always 6731
+every 6678
+off 6672
+social 6655
+human 6598
+1 6566
+friend 6560
+too 6522
+career 6423
+friends 6383
+home 6378
+relationship 6316
+data 6316
+place 6252
+3 6219
+chinese 6206
+under 6119
+write 6115
+future 6085
+done 6055
+software 6054
+exam 5982
+parents 5963
+working 5957
+america 5945
+account 5942
+10 5903
+phone 5896
+learning 5879
+another 5824
+food 5805
+website 5804
+guy 5794
+family 5783
+got 5781
+app 5772
+states 5733
+top 5713
+around 5692
+believe 5688
+age 5679
+usa 5676
+car 5662
+days 5651
+happens 5638
+course 5587
+wrong 5550
+kind 5544
+read 5543
+big 5505
+each 5488
+google 5448
+companies 5421
+power 5405
+able 5398
+makes 5389
+major 5375
+show 5371
+also 5371
+body 5363
+down 5351
+hard 5337
+history 5331
+5 5297
+last 5292
+movie 5279
+americans 5243
+hate 5240
+question 5233
+ask 5200
+both 5185
+canada 5153
+cost 5113
+living 5110
+less 5106
+considered 5094
+normal 5082
+pay 5067
+muslims 5064
+president 5062
+create 5054
+degree 5028
+test 5002
+woman 5001
+since 4980
+type 4977
+jee 4955
+instead 4942
+god 4937
+well 4906
+examples 4882
+facebook 4881
+media 4869
+great 4843
+child 4839
+play 4830
+common 4829
+prepare 4823
+children 4822
+actually 4806
+rank 4788
+process 4785
+answer 4781
+part 4774
+market 4762
+anything 4750
+united 4733
+given 4700
+eat 4670
+myself 4666
+choose 4663
+marks 4662
+what sensors does iphone have
+which would good distance mba option who presently well settled entrepreneur
+think making women wait many years after puberty have sex can produce schizophrenia other disorders hormonally repression
+would rather live society without medical doctors engineers
+was offered job canada heard buildings full asbestos should scared
+did gain your knowledge about persecuted christians
+who will change world now
+fast spiders grow
+would rate amogh classes bhubaneswar
+there entertainment places activities greek
+kyc already updated kyc status showing multiple times then what need
+what difference gasoline between different gas stations
+what cybersecurity programs cybersecurity professionals home
+why have go through wars
+why was settling along waterways important early colonists
+indian can usa visa attend iifa awards 2017
+can run software twice pc
+which best colleges karnataka pursue distance mba
+what mostly everyones type jewelry
+whare leutinent lives
+want build 1600 sq ft building much stone brick cement required
+what your suggestions reducing burden school curriculum
+britain much populist welfare economy like continental europe capitalist competitive like us
+what can done about police interfering personal relationships
+can ece engineering study apply google us
+offensive why many people india seem condone child abuse
+which exercise machine best losing belly fat
+what things which china significantly better doing than india
+what history 0330 number range
+islam allows muslim woman girl facebook
+what straw that broke camels back making consider leaving your job
+what good bad neighborhoods jambi indonesia
+women gradually surpassing men different fields men who gradually becoming inferior women
+priest flock over 300 have been commended parish work secret atheist this wrong
+considered insult wear red funeral what culture did this originate
+squad was engaged combat would concern member appeared enjoying battle
+what main beliefs pure land buddhism
+overprotection concept stagnating ability move forward that being said believe sharing really caring find astonishing amount people that believe otherwise that many people truly undervalue ip
+stink bug bites treated
+what effects mars sun conjunction libra ascendant sagittarius
+send whatsapp anonymously
+many casualties can expected icbm that explodes ground causing twomegaton explosion lebanon kansas
+soothe infants sore throat
+what best optional subjects upsc msc physics graduate
+which test can used distinguish phenol anf methanol
+offer facebook will boot camp first several weeks want prepare that what should readlearnpractice
+what chemistry behind feeling proud
+where can upeseat papers answers
+should tell his girlfriend that he cheated her
+response our arecibo message andromeda galaxy 5 million years later which earliest possible saying got your message let us talk should continue conversation
+gender segregation disappearing
+term film noir same term dystopian movie
+people very high iqs generally impatient others who never seem they cope frustration
+why beam balance considered precise
+does negotiating peace treaty between two parties war count being diplomatic
+why wear hijjab when prying
+what your favorite tool eq audio engineer
+can medically diagnosed autism age 17 show signs your whole life
+what your opinion tom perezs leadership dnc chair has he been successful rebuilding party will he successful 2018
+did negan really feel bad about upsetting carl
+reductionistic methodologies useful
+who was amit shah then prime minister pandit jawaharlal nehru
+does continuous exposure bright light computer damage eyesight
+what similarities between centimeters millimeters
+travelling important part life people past
+what gift girlfriend her birthday impress her
+why codes conduct important your everyday life
+what some easy homemade salsa recipes
+daughter her father have boy will boy her son baby brother something else
+why wouldn ’ t god have hunger battle
+stay away anxiety during exams
+sketchy have amazon echo due privacy aspect
+indian feel proud their invation sikkim
+true that car speedometers slightly inaccurate reduce speeding
+what these worm things capsicum seedling
+which better kanchan chobham tank armor
+what regret your behaviour
+cervical fluid used detect early stages pregnancy
+what should when have 156 creatinine test
+long hair males perceived professional world
+why sometikes feel full even though have eaten anything whole day
+what they risk pure speculative firm company can experience
+bride kill bill allowed carry samurai her flight tokyo
+did anyone call max life asking transfer your policy hdfc life
+what kind bond exists between carbon atoms hydrocarbon
+just recover loss fiancee
+what girl after breakup
+conduct java interviews asking candidates write small peice functionality workstation having dev environment set hardly anyone able complete task efficiently need relook our interview process
+which free online gate cse coaching courses
+what meaning gwak
+when our monthly sip closed where does money goes
+truth made truths
+what was like black men slaves working livery during 1800s northern us there personal accounts records their employment
+there something wrong doing wrong when comes dating
+what should avoid getting hit lightning their hair starts floating
+flower vase dead alive why
+fund neteller account egypt now that credit card option working
+was your husband ever humiliated
+come people worried over paris attacks when fault was paris because people paris government were allowing mockery islam newspapers
+can processing speed terms mental arithmetic abilities 18 year old improved especially there possibility reason lack such ability may due him attempting much work math throughout school
