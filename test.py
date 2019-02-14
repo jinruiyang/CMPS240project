@@ -6,7 +6,7 @@ from string import punctuation
 
 
 #File path for training data
-TRAIN = "data/train.csv"
+TRAIN = "../quora_data/train.csv"
 
 
 # This is a list of all stop words to be removed during the pre-processing phase. These words were chosen
@@ -86,10 +86,9 @@ def getData(filename):
 			if line_count == 0:
 				line_count += 1
 			else:
-			        if line_count < 300:
-				        instance = createInstance(row)
-				        data.append(instance)
-				        line_count += 1
+                                instance = createInstance(row)
+				data.append(instance)
+				line_count += 1
 	return data
 
 
