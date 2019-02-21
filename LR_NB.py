@@ -22,6 +22,17 @@ from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB,MultinomialNB,ComplementNB,BernoulliNB
 
+# added for Neural Network #
+import time
+
+import tensorflow as tf
+from tensorflow import keras
+
+from sklearn import metrics
+from keras.preprocessing import text, sequence
+from sklearn.model_selection import train_test_split
+
+
 
 # Any results you write to the current directory are saved as output.
 
@@ -200,6 +211,61 @@ submission3['prediction'] = (test_preds2>0.3).astype(np.int)
 # submission3.to_csv('bernoulli_submission.csv', index=False)
 submission3['prediction'] = (test_preds2>0.3)
 
+
+################ Baseline NN model with no embeddings #################
+
+# defining some values for NN #
+max_num_words = 50000
+max_len = 70
+embed_size = 300
+
+# creating the tokenizer #
+print("Creating the tokenizer......")
+token = text.Tokenizer(num_words=max_num_words)
+token.fit_on_texts(all_text)
+word_index = token.word_index
+
+# convert train_text to vectors of ints #
+print("Converting text to sequences......")
+train_seq_texts = token.texts_to_sequences(train_text)
+test_seq_texts = token.texts_to_sequences(test_text)
+
+# pad sentences so they're all the same lnegth #
+print("Padding sequences to all the same length......")
+train_seq_x = sequence.pad_sequences(train_seq_texts, maxlen=max_len)
+test_seq_x = sequence.pad_sequences(test_seq_texts, maxlen=max_len)
+
+# Split train_text into train and validation sets: 90-10 split #
+print("Getting train and validation sets......")
+train_x, valid_x, train_y, valid_y = train_test_split(train_seq_x, train_target, test_size=.1)
+
+# Build NN model #
+print("Building model......")
+model = keras.Sequential()
+model.add(keras.layers.Embedding(max_num_words, embed_size))
+model.add(keras.layers.GlobalAveragePooling1D())
+model.add(keras.layers.Dense(16, activation=tf.nn.relu))
+model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+print(model.summary())
+
+# Fit NN model #
+print("Fitting model......")
+history = model.fit(train_x,
+                    train_y,
+                    epochs=2,
+                    batch_size=512,
+                    validation_data=(valid_x, valid_y),
+                    verbose=1)
+
+# Test model at different thresholds #
+print("Testing at different thresholds......")
+pred_valid_y = model.predict([valid_x], batch_size=1024, verbose=1)
+for thresh in np.arange(0.1, 0.501, 0.01):
+    thresh = np.round(thresh, 2)
+    print("F1 score at threshold {0} is {1}".format(thresh, metrics.f1_score(valid_y, (pred_valid_y>thresh).astype(int))))
+
+##########################################################################
 submission_final = pd.DataFrame.from_dict({'qid':test_data['qid']})
 submission_final['prediction'] = ((0.6*submission1['prediction'] + 0.2*submission2['prediction'] + 0.2*submission3['prediction'])>0.4).astype(np.int)
 submission_final.to_csv('submission.csv',index = False)
